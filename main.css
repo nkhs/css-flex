@@ -4,7 +4,6 @@
     /*  align-content need flex-wrap*/
     flex-wrap: wrap;
     height: 300px;
-    border: 1px red solid;
 }
 
 .item {

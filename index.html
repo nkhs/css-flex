@@ -7,8 +7,8 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Flexbox in CSS</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.css"
+        crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
@@ -24,30 +24,30 @@
 </head>
 
 <body>
-    <div class="container" id="container">
+    <div class="container card1 mt-5 border" id="container">
         <div class="item green grow-1">1</div>
         <div class="item pink grow-2">2</div>
         <div class="item">3</div>
         <div class="item">4</div>
         <div class="item">5</div>
     </div>
-    <div class="container-style mt-5">
-        
-        <button class="btn btn-default">align-content: stretch</button>
-        <button class="btn btn-default">align-content: flex-start</button>
-        <button class="btn btn-default">align-content: flex-end</button>
-        <button class="btn btn-default">align-content: center</button>
-        <button class="btn btn-default">align-content: space-between</button>
-        <button class="btn btn-default">align-content: space-around</button>
+    <div class="container-style mt-5 d-flex justify-content-start px-5 gap-5">
+
+        <button class="btn btn-sm btn-secondary">align-content: stretch</button>
+        <button class="btn btn-sm btn-secondary">align-content: flex-start</button>
+        <button class="btn btn-sm btn-secondary">align-content: flex-end</button>
+        <button class="btn btn-sm btn-secondary">align-content: center</button>
+        <button class="btn btn-sm btn-secondary">align-content: space-between</button>
+        <button class="btn btn-sm btn-secondary">align-content: space-around</button>
     </div>
 
-    <div class="container-style mt-5">
-        
-        <button class="btn btn-default">align-items: flex-start</button>
-        <button class="btn btn-default">align-items: flex-end</button>
-        <button class="btn btn-default">align-items: center</button>
-        <button class="btn btn-default">align-items: baseline</button>
-        <button class="btn btn-default">align-items: stretch</button>
+    <div class="container-style mt-5 d-flex justify-content-start px-5 gap-5">
+
+        <button class="btn btn-sm btn-secondary">align-items: flex-start</button>
+        <button class="btn btn-sm btn-secondary">align-items: flex-end</button>
+        <button class="btn btn-sm btn-secondary">align-items: center</button>
+        <button class="btn btn-sm btn-secondary">align-items: baseline</button>
+        <button class="btn btn-sm btn-secondary">align-items: stretch</button>
     </div>
     <div>
 
