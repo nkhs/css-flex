@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    align-content: stretch;
+    /*  align-content need flex-wrap*/
+    flex-wrap: wrap;
+    height: 300px;
+    border: 1px red solid;
+}
+
+.item {
+    height: 46px;
+    display: flex;
+    margin: 2px;
+    width: 30px;
+    flex-basis: 80px;
+    background: #310736;
+    color: #fff;
+    text-align: center;
+    line-height: 46px;
+    align-items: center;
+    justify-content: center;
+}
+
+.item:nth-child(2) {
+    height: 96px;
+}
+
+.green {
+    background: #05ffb0;
+}
+
+.pink {
+    background: #ff3860;
+}
+
+.grow-1 {
+    flex-grow: 1;
+}
+
+.grow-2 {
+    flex-grow: 2;
+}

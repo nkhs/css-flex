@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<!-- https://cssreference.io/flexbox/ -->
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Flexbox in CSS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="item green grow-1">1</div>
+        <div class="item pink grow-2">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <div class="container-style mt-5">
+        
+        <button class="btn btn-default">align-content: stretch</button>
+        <button class="btn btn-default">align-content: flex-start</button>
+        <button class="btn btn-default">align-content: flex-end</button>
+        <button class="btn btn-default">align-content: center</button>
+        <button class="btn btn-default">align-content: space-between</button>
+        <button class="btn btn-default">align-content: space-around</button>
+    </div>
+
+    <div class="container-style mt-5">
+        
+        <button class="btn btn-default">align-items: flex-start</button>
+        <button class="btn btn-default">align-items: flex-end</button>
+        <button class="btn btn-default">align-items: center</button>
+        <button class="btn btn-default">align-items: baseline</button>
+        <button class="btn btn-default">align-items: stretch</button>
+    </div>
+    <div>
+
+        <h1>Doc</h1>
+        <pre>
+        <b>flex-basis</b>
+        Defines the initial size of a flexbox item.
+
+        <b>flex-direction</b>
+        Defines how flexbox items are ordered within a flexbox container.
+
+        <b>flex-flow</b>
+        Shorthand property for flex-direction and flex-wrap.
+
+        <b>flex-grow</b>
+        Defines how much a flexbox item should grow if there's space available.
+
+        - flex-grow: 0;
+        The element will not grow if there's space available. It will only use the space it needs.
+
+        - flex-grow: 1;
+        The element will grow by a factor of 1. It will fill up the remaining space if no other flexbox item has a flex-grow value.
+
+        - flex-grow: 2;
+        Because the flex-grow value is relative, its behaviour depends on the value of the flexbox item siblings.
+
+        In this example, the remaining space is divided in 3:
+
+        1 third goes to the green item
+        2 thirds go to the pink item
+        Nothing goes to the yellow item, who retains its initial width
+
+        <b>flex-shrink</b>
+        Defines how much a flexbox item should shrink if there's not enough space available.
+
+        - flex-shrink: 1;
+        If there's not enough space available in the container's main axis, the element will shrink by a factor of 1, and will wrap its content.
+
+        <b>flex</b>
+        The flex property is a shorthand property for:
+            flex-grow, flex-shrink,  flex-basis
+        
+        flex: flex-grow flex-shrink flex-basis|auto|initial|inherit;
+        </pre>
+    </div>
+</body>
+
+</html>
